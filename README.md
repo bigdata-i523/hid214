@@ -8,8 +8,8 @@
 
 ```
 owner:
-    hid: 000
-    name: Gregor von Laszewski
+    hid: 214
+    name: Lu, Junjie
     url: https://github.com/bigdata-i523/sample-hid000
 ```
 
