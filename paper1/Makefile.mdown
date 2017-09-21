@@ -1,4 +1,3 @@
-
 PACKAGE=acmart
 
 SAMPLES = report.tex
