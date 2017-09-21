@@ -10,7 +10,7 @@
 owner:
     hid: 214
     name: Lu, Junjie
-    url: https://github.com/bigdata-i523/sample-hid000
+    url: https://github.com/bigdata-i523/hid214
 ```
 
 # Paper 1
