@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 SEP 2017 07:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 SEP 2017 08:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7,8 +7,8 @@ entering extended mode
 (./report.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/acmart/acmart.cls
-Document Class: acmart 2016/05/18 v1.09 Typesetting articles for Association of
+(./acmart.cls
+Document Class: acmart 2017/01/07 v1.28 Typesetting articles for Association of
  Computing Machinery
 (/usr/local/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
@@ -22,13 +22,12 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@depth=\count79
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-Package acmart Info: Not using screen mode on input line 68.
-Package acmart Info: Not using review mode on input line 76.
-Package acmart Info: Not using authorversion mode on input line 84.
-Package acmart Info: Not using natbib mode on input line 92.
-Package acmart Info: Not using anonymous mode on input line 100.
-Class acmart Info: Using format sigconf, number 4 on input line 109.
-Class acmart Info: Using fontsize 9pt on input line 162.
+Package acmart Info: Not using screen mode on input line 69.
+Package acmart Info: Not using review mode on input line 77.
+Package acmart Info: Not using authorversion mode on input line 85.
+Package acmart Info: Not using anonymous mode on input line 103.
+Class acmart Info: Using format sigconf, number 4 on input line 112.
+Class acmart Info: Using fontsize 9pt on input line 168.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsart.cls
 Document Class: amsart 2015/03/04 v2.20.2
@@ -162,6 +161,13 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/local/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count102
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
 
@@ -219,16 +225,23 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen115
-\Hy@linkcounter=\count102
-\Hy@pagecounter=\count103
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count104
+\Hy@SavedSpaceFactor=\count105
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4322
+.
+Package hyperref Info: Option `unicode' set `true' on input line 4322.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2016/05/05 v6.83n Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Hyper figures OFF on input line 4446.
 Package hyperref Info: Link nesting OFF on input line 4451.
@@ -237,7 +250,7 @@ Package hyperref Info: Plain pages OFF on input line 4461.
 Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count105
+\c@Hy@tempcnt=\count106
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -245,7 +258,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5044.
 \XeTeXLinkMargin=\dimen116
-\Fld@menulength=\count106
+\Fld@menulength=\count107
 \Field@Width=\dimen117
 \Fld@charsize=\dimen118
 Package hyperref Info: Hyper figures OFF on input line 6298.
@@ -257,24 +270,24 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count107
-\c@Item=\count108
-\c@Hfootnote=\count109
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count110
-\c@bookmark@seq@number=\count111
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip52
+\Hy@SectionHShift=\skip54
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -292,7 +305,7 @@ Package graphics Info: Driver file: pdftex.def on input line 96.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count112
+\Gread@gobject=\count113
 ))
 \Gin@req@height=\dimen119
 \Gin@req@width=\dimen120
@@ -316,9 +329,9 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count113
-\Gm@cntv=\count114
-\c@Gm@tempcnt=\count115
+\Gm@cnth=\count114
+\Gm@cntv=\count115
+\c@Gm@tempcnt=\count116
 \Gm@bindingoffset=\dimen121
 \Gm@wd@mp=\dimen122
 \Gm@odd@mp=\dimen123
@@ -338,7 +351,7 @@ Package: nccfoots 2005/02/03 v1.2 NCC Footnotes Package (NCC)
 \MFL@columnwidth=\dimen129
 )
 \footinscopyrightpermission=\insert198
-\c@footnotecopyrightpermission=\count116
+\c@footnotecopyrightpermission=\count117
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/libertine/libertine.sty
 Package: libertine 2014/11/25 (Bob Tennent) Supports Libertine and Biolinum fon
@@ -452,14 +465,14 @@ LaTeX Info: Redefining \oldstylenums on input line 478.
 Package: zi4 2016/02/22 v1.10
 
 `inconsolata-zi4' v1.10, 2016/02/22 Text macros for Inconsolata (msharpe)
-\zifour@ocount=\count117
+\zifour@ocount=\count118
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/newtxmath.sty
 Package: newtxmath 2016/03/27 v1.466
 
 `newtxmath' v1.466, 2016/03/27 Math macros based on txfonts (msharpe)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count118
+\tx@Isdigit=\count119
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 137.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/LinuxLibertineT-TLF/m/n on input li
@@ -564,56 +577,58 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@hangindent=\dimen136
 )
 Package caption Info: AMS or SMF document class.
-\c@ContinuedFloat=\count119
+\c@ContinuedFloat=\count120
 Package caption Info: hyperref package is loaded.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count120
+\c@float@type=\count121
 \float@exts=\toks29
 \float@box=\box29
 \@float@everytoks=\toks30
 \@floatcapt=\box30
 )
 \@float@every@sidebar=\toks31
-\c@sidebar=\count121
+\c@sidebar=\count122
 \fulltextwidth=\dimen137
-\num@authors=\count122
-\@ACM@badge@width=\skip53
-\@ACM@title@width=\skip54
-\@ACM@badge@skip=\skip55
-Class acmart Info: Printing CSS on input line 981.
-Class acmart Info: Printing bibformat on input line 988.
+\num@authorgroups=\count123
+\@ACM@badge@width=\skip55
+\@ACM@title@width=\skip56
+\@ACM@badge@skip=\skip57
+Class acmart Info: Printing CCS on input line 1048.
+Class acmart Info: Printing bibformat on input line 1048.
+Class acmart Info: Suppressing folios on input line 1055.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment') Excluding comment 'CCSXML'
 \mktitle@bx=\box31
-\author@bx=\box32
+\@ACM@commabox=\box32
+\author@bx=\box33
 \author@bx@wd=\dimen138
-\author@bx@sep=\skip56
+\author@bx@sep=\skip58
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip57
-\f@ncyO@elh=\skip58
-\f@ncyO@erh=\skip59
-\f@ncyO@olh=\skip60
-\f@ncyO@orh=\skip61
-\f@ncyO@elf=\skip62
-\f@ncyO@erf=\skip63
-\f@ncyO@olf=\skip64
-\f@ncyO@orf=\skip65
+\fancy@headwidth=\skip59
+\f@ncyO@elh=\skip60
+\f@ncyO@erh=\skip61
+\f@ncyO@olh=\skip62
+\f@ncyO@orh=\skip63
+\f@ncyO@elf=\skip64
+\f@ncyO@erf=\skip65
+\f@ncyO@olf=\skip66
+\f@ncyO@orf=\skip67
 )
 \@folio@wd=\dimen139
 \@folio@ht=\dimen140
 \@folio@voffset=\dimen141
-\c@theorem=\count123
+\c@theorem=\count124
 
-Excluding comment 'screenonly' Include comment 'printonly'
-Include comment 'anonsuppress'
+Special comment 'acks' Excluding comment 'screenonly'
+Include comment 'printonly' Include comment 'anonsuppress'
 LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineT-TLF on
- input line 1988.
+ input line 2191.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.
 fd
@@ -621,16 +636,16 @@ File: OT1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for OT1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1988.
+(Font)              scaled to size 9.0pt on input line 2191.
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/endfloat/endfloat.sty
 Package: endfloat 2011/12/25 v2.5d LaTeX2e package puts figures and tables at e
 nd (jdm)
-\c@postfigure=\count124
+\c@postfigure=\count125
 \efloat@postfff=\write4
-\@ef@fffopen=\count125
-\c@posttable=\count126
+\@ef@fffopen=\count126
+\c@posttable=\count127
 \efloat@postttt=\write5
-\@ef@tttopen=\count127
+\@ef@tttopen=\count128
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
@@ -644,31 +659,415 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen149
 \cmidrulekern=\dimen150
 \defaultaddspace=\dimen151
-\@cmidla=\count128
-\@cmidlb=\count129
+\@cmidla=\count129
+\@cmidlb=\count130
 \@aboverulesep=\dimen152
 \@belowrulesep=\dimen153
-\@thisruleclass=\count130
-\@lastruleclass=\count131
+\@thisruleclass=\count131
+\@lastruleclass=\count132
 \@thisrulewidth=\dimen154
 )
+Class acmart Info: Suppressing bibformat on input line 10.
 
-./report.tex:10: Package xkeyval Error: `printacmref' undefined in families `@A
-CM@topmatter@'.
+(./report.aux)
+\openout1 = `report.aux'.
 
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 \settopmatter{printacmref=false}
-                                      % Removes citation information below a...
- 
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 14.
+LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 14
+.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/omlnxlmi.fd
+File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
+)
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 14
+.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/omsntxsy.fd
+File: omsntxsy.fd 2012/11/14 Fontinst v1.933 font definitions for OMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 14.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxexa.fd
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 14.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 14.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 14.
+LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 14.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 14.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 14.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Info: Redefining \microtypecontext on input line 14.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring OFF on input line 14.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count133
+)
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
+LaTeX Info: Redefining \nameref on input line 14.
+
+(./report.out) (./report.out)
+\@outlinefile=\write6
+\openout6 = `report.out'.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count134
+\scratchdimen=\dimen155
+\scratchbox=\box35
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen156
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
+\everyMPtoPDFconversion=\toks33
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(54.0pt, 506.295pt, 54.0pt)
+* v-part:(T,H,B)=(57.0pt, 664.96999pt, 73.0pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=506.295pt
+* \textheight=626.96999pt
+* \oddsidemargin=-18.26999pt
+* \evensidemargin=-18.26999pt
+* \topmargin=-15.26999pt
+* \headheight=12.0pt
+* \headsep=14.0pt
+* \topskip=10.0pt
+* \footskip=12.0pt
+* \marginparwidth=90.0pt
+* \marginparsep=11.0pt
+* \columnsep=24.0pt
+* \skip\footins=7.0pt plus 11.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@mv@tabular=\count140
+\c@mv@boldtabular=\count141
+(/usr/local/texlive/2016/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 40.
+LaTeX Font Info:    Try loading font information for OT1+LinuxBiolinumT-TLF on 
+input line 40.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/libertine/OT1LinuxBiolinumT-TLF.f
+d
+File: OT1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for OT1/L
+inuxBiolinumT-TLF.
+)
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 40.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxBiolinumT-TLF' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <17.28> no
+t available
+(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on in
+put line 40.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 40.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 40.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 40.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 40.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 40.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 59.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/ot1zi4.fd
+File: ot1zi4.fd 2014/06/22 OT1/zi4 (Inconsolata)
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zi4' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
+(Font)              scaled to size 10.95pt on input line 73.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 7.3pt on input line 91.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 102.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 102.
+LaTeX Font Info:    Try loading font information for TS1+zi4 on input line 106.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/inconsolata/ts1zi4.fd
+File: ts1zi4.fd 2014/06/22 Fontinst v1.933 font definitions for TS1/zi4.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zi4' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [1.1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+\openout5 = `report.ttt'.
+
+ (report.ttt)
+\openout4 = `report.fff'.
+
+
+(report.fff)
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 9.0pt on input line 335.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/9'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sl' in size <9> not a
+vailable
+(Font)              Font shape `OT1/LinuxLibertineT-TLF/m/it' tried instead on 
+input line 357.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 357.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 368.
+ [2.2] Processing 'acks' comment.
+\openout3 = `comment.cut'.
+
+
+Comment 'acks' writing to comment.cut. Straight input of comment.cut.
+(./comment.cut) (./report.bbl
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 59.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 5.5pt on input line 225.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3.3]
+Underfull \hbox (badness 1215) in paragraph at lines 407--416
+[]\OT1/LinuxLibertineT-TLF/m/n/7 (+20) Barack Obama. 2008.  A more per-fect uni
+on.  Video. (5 March 2008).
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 407--416
+\OT1/LinuxLibertineT-TLF/m/n/7 (+20) Re-trieved March 21, 2008 from []$häp : / 
+/ video . google . com / videoplay ? docid =
+ []
+
+) AED endfloat: Processing end Figures and Tables [4.4
+
+]
+
+Package hyperref Warning: bookmark level for unknown  defaults to 0.
+
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 453.
+
+(./report.lof)
+\tf@lof=\write7
+\openout7 = `report.lof'.
+
+ [5.5
+
+
+] (./report.fff
+LaTeX Font Info:    Font shape `OT1/zi4/bx/n' in size <9> not available
+(Font)              Font shape `OT1/zi4/b/n' tried instead on input line 10.
+) [6.6
+
+]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 453.
+
+(./report.lot)
+\tf@lot=\write8
+\openout8 = `report.lot'.
+
+ [7.7
+
+] (./report.ttt
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
+ input line 10.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
+fd
+File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/
+LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 10.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [8.8
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 453.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 453.
+ (./report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 453.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 453.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 7DE027C6A66764E08736D15C62D2A69F;3158.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 453.
+ ) 
 Here is how much of TeX's memory you used:
- 12308 strings out of 493014
- 186685 string characters out of 6133351
- 318460 words of memory out of 5000000
- 15579 multiletter control sequences out of 15000+600000
- 5290 words of font info for 16 fonts, out of 8000000 for 9000
+ 17405 strings out of 493014
+ 262627 string characters out of 6133351
+ 371897 words of memory out of 5000000
+ 20094 multiletter control sequences out of 15000+600000
+ 92753 words of font info for 321 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,0n,94p,266b,153s stack positions out of 5000i,500n,10000p,200000b,80000s
-./report.tex:10:  ==> Fatal error occurred, no output PDF file produced!
+ 60i,11n,94p,309b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/
+usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/u
+sr/local/texlive/2016/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-4.enc}{/usr
+/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/
+2016/texmf-dist/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}{/usr/local/texlive/2
+016/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/local/texlive/2016/
+texmf-dist/fonts/enc/dvips/libertine/lbtn_c6xmqr.enc}{/usr/local/texlive/2016/t
+exmf-dist/fonts/enc/dvips/libertine/lbtn_zajy4r.enc}{/usr/local/texlive/2016/te
+xmf-dist/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{/usr/local/texlive/2016/tex
+mf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{/usr/local/texlive/2016/texm
+f-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}</usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/inconsolata/Inconsolata-zi4b.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibertineTB
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/LinLibert
+ineTBI.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/libertine/Lin
+LibertineTI.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/fx
+lri-7letters.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts
+/rtxmi.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/rtxr.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/newtx/txex-bar.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/newtx/zxlri.pfb>
+Output written on report.pdf (8 pages, 558784 bytes).
+PDF statistics:
+ 397 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 39089 words of extra memory for PDF output out of 42996 (max. 10000000)
+
