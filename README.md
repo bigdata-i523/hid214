@@ -22,10 +22,11 @@ paper1:
    hid:
    - 214
    title: Big Data and Basketball
-   abstract: This paper showcases this and that and the other
-   url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
+   abstract: 
+When players shoot the ball, the movement trajectory could decide the shooting rate directly. Theoretical basis of kinematic mechanics can contribute to analyze the influence of rotation of basketball on air resistance. 
+   url: https://github.com/bigdata-i523/sample-hid000/paper1/
    type: latex
-   status: in progress
+   status: 100%
    chapter: Sports
 ```
    
