@@ -1,6 +1,15 @@
 \documentclass[sigconf]{acmart}
 
-\input{format/i523}
+\usepackage{hyperref}
+
+\usepackage{endfloat}
+\renewcommand{\efloatseparator}{\mbox{}} % no new page between figures
+
+\usepackage{booktabs} % For formal tables
+
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+\pagestyle{plain} % removes running headers
 
 \begin{document}
 \title{Big Data and basketball}
@@ -31,62 +40,123 @@ When players shoot the ball, the movement trajectory could decide the shooting r
 \maketitle
 
 \section{Introduction}
-
-In basketball game, players who has a higher shooting rate would win the match definitely. Many factors could influence shooting rate.It is hard to grasp these influence because of its complexity. But people have to get some regulation because it is so essential. Hence, research on shooting skills becomes one of the major points for Basketball researchers. Much research focus on specification and technical analysis of skills. What's more, many mechanical factors can also influence shooting rate, such as strength, shooting direction, and the motion path of basketball, namely shooting speed, height and angle, rotation of basketball, and air resistance. This paper focuses on the basketball mechanical motion path analysis after its shooting action.
-
+These years people pay more and more attention to global sports competition. The importance of statistics has been changed too. Taking NBA as a example, approximately 50 years ago, people just recorded several kinds of basic statistics. People just used these data to analyze team's overall strength. As we all know there are many factors can determine the outcome of competition. More and more people anticipates for results for amount of money through betting companies. Traditional statistics could not make more contribution in predicting result of competition. People began to find more types of data and method to analysis and forecasting results of sports to improve predicting accuracy. But many machine learning methods had a bad performance on results prediction because of limitation of limited datasets. We will focus on the Maximum Entropy model which overcomes this limitation by making some assumption as unknown facts with little known facts. 
 \section{The Body of The Paper}
-\subsection{Sports Biomechanics Principle}
-Sports biomechanics is a branch of biomechanics that develops rapidly, which is a subject of researching the general law of human motion based on sports anatomy, sports physiology, mechanics of machinery, mechanics of materials, theoretical mechanics, higher mathematics, etc. It mainly focuses on biomechanical characteristics of human body structure and skills. This paper aims to make sports biomechanical diagnosis based on this theory, to make an optimum skill scheme and provide a mechanical basis for preventing and curing sports injury and making rehabilitation methods.\\
-The guiding function of sports biomechanics principle on skill training is mainly reflected in the following aspects: firstly, sports skill training must conform to the biomechanical principle of action skill; secondly, an overall optimization of elements of sports skill training is to be achieved; thirdly, the skill training process is adjusted and controlled via technical diagnosis; fourthly, differential treatment is taken in skill training. This paper manly focuses on sports biomechanical analysis of skills of basketball shooting based on biomechanics principle, to obtain the sports biomechanics law of basketball shooting and sum up the sports biomechanics factors influencing the shooting rate. Especially, the influence of the limbs? action process on the motion path of basketball after shoot action is analyzed, with a hope to provide theoretical guidance for optimizing basketball training skills and raising the shooting rate.\\
-\subsection{MechanicsTheoreticalBasis}
-Mechanical motion refers to that the spatial position of objectives changes with the time. It is one of the most common motions in life and production of human, in which the motion form of matters is simplest. Basic theoretical mechanics is mainly for researching the balance law of objects under the action of force systems and object motion from geometrical angle (such as track, speed, accelerated speed, irrelevant to the force acting on object) based on statics and kinematics, and the correlation between the motion of forced object and acting force from the perspective of kinetics. In this paper, the flying track of basketball after shoot action is calculated and analyzed on the basis of basic mechanics theories, different motion situations (nothing but the net, touching the net, and touching the backboard) are analyzed and researched based on related mechanics theories, and different effects caused by different mechanical factors are discussed.
-\subsection{Mechanical Analysis of Basketball Rotation and Air Resistance after Shooting Action}
-The influence of rotation of basketball and the air resistance after shoot action are discussed, to figure out the optimum shooting angle and speed, and incoming angle. There are two types of rotation of basketball after shoot action: forward- rotation and contra rotation. The said forward-rotation or contra rotation is determined according to the direction of index fingers of shooter [1].
-Contra rotation of basketball, especially high-speed contra rotation, is helpful to overcome air resistance, avoid floating up and down of basketball during flying, and keep basketball stable in the air, which is of great importance to shooting from middle-long range. As everyone knows, the friction on basketball from air is small when basketball flies slowly, because there exists a small gap between the surrounding airflow and basketball (which is called spherical layer). Thanks to the existence of the spherical layer, the pressure difference between the front and rear areas surrounding basketball in the direction of motion is not significant. That?s to say, airflow can keep stable after running through basketball, and has little impact on the motion of basketball. In the case of shooting from middle-long range, however, the motion rate of basketball is large, the friction between basketball and airflow increases, the spherical layer is greatly damaged, and a streamline greatly deviating from the original airflow direction will be produced when airflow runs through the pick-up point of basketball (see Fig. 1) so that a large laminar flow vortex region is produced in the rear area of basketball[2]. Thus, the pressure difference between the front and rear areas of basketball is significant, basketball suffers large resistance, and the flying distance and height of basketball are reduce. Hence, the conditions for shooting from middle-long range are adverse. If basketball is made to contra rotate during flying by exerting a proper force to basketball in the case of shooting from middle-long range: since the air is of viscosity and the basketball surface is not absolutely smooth, basketball will drive a layer of gas particles surrounding it while rotating, and produce air circulation consistent with the basketball in respect of the rotation direction. The air circulation interacts with airflow to reduce or damage the laminar flow vortex region in rear area of the basketball, so that the airflow surrounding the basketball changes. In this way, the air resistance can be largely reduced, and the basketball can keep flying stably. This is good for controlling the flying track and direction of basketball, and increasing shooting rate.
-High-speed contra rotation of basketball can bring a raising force to basketball, which is good for raising the flying radian of basketball, increasing the angle of incidence, enlarging the exposure face of basketry, and improving shooting rate. For the above said reasons, the air flow and flow rate above and under basketball differ while basketball contra rotates, the air circulation above is consistent with the flow direction of air streamline, and the airflow velocity is large but the flow is small. Similarly, it is the opposite below basketball, namely large flow but slow velocity[3]. In accordance with the Bernoulli equation of fluid mechanics:
-Air density P and gravitational acceleration g are constant, and the change of fluid height h can be ignored relative to the height of atmosphere. Hence, the larger v is, the smaller P is; the smaller v is, the larger P is. Theoretically, the longer the shooting distance is, the faster the shooting speed should be. The high flow rate of air formed at point of a flying basketball relative to B point is a low pressure area, while the low flow rate of air at point B relative A is a high pressure area. Thus, an upward force, namely raising force, is generated, and the larger the pressure difference is, the larger the raising force is, and the larger the raising force is, the larger the radian of parabola is. Thus, the faster the contra rotation rate of basketball, so that the radian of parabola enlarges, the angle of incision increases, the sectional area of incision enlarges, and the shooting rate rises.\\
-Forward-rotation of basketball is good for keeping basketball relatively stable, and quick attack. Through experimental observation of basketball game, it is found that with same strength, the movement speed of forward-rotating basketball is fastest, followed by irrigational basketball and contra rotating basketball, and it is just the opposite in respect of flying distance and radian of basketball. Hence, players usually shoot low while moving for quick attack. Although basketball suffers a down force while forward-rotating that will reduce the flying height and distance at the horizontal level of basketry, the down force will not significantly influence basketball because forward-rotating basketball is mainly used for near shooting while moving and both the flying time and distance of basketball are short.
+\subsection{Analysis of alternation number}\\
+Many factors would influence the alternation number:\\
+\begin{enumerate}
+    \item Defensive rebounds and offensive rebounds
+    \item Turnovers and steals
+    \item Violations and substitutions
+\end{enumerate}
+Alternation number can tell us something about alternation of attack side and defend side. But only point difference between two teams can tell us dynamics of the game from start to end. Here we just compare different point difference on final score. According the final result from 2011 to 2015:
+\begin{enumerate}
+    \item 65\% games is ended with a point difference below 10.
+    \item 33\% games is ended with a point difference between 11 and 27.
+    \item 2\% games is ended with a point difference more than 28.
+\end{enumerate}
+The distribution of alternation number in interval (1) is uniform. It is the reason of fierce matches. Players always pay more attention to their own defensive rebounds and getting avoid of being stolen. The distribution changes in interval (2). If the match lose its suspense too early, alternation number would be influenced. Players may be more relax so that players on another side would get more steals and offensive rebounds. Games in interval (3) is totally different, in fact we could hardly call them "match". Consequently, the distribution of alternation number changes radically. 
 
-
-
+\subsection{Maximum entropy model}\\
+Entropy is the expect value of information in message. We use it to measure uncertainty of random events. \cite{cite01} It can be written as:
+\begin{equation*}
+H(p) = -\sum_{i=1}^np_i\log_2 p_i
+\end{equation*}
+$p_i$ is random event's probability and $H(p)$ is entropy. The maximum entropy principle tells us we have to pick a set with maximum entropy and including all known information. \cite{cite02}. We can get the most uniform probability distribution in this way and may get the most accurate result prediction. And this most uniform probability distribution is Maximum entropy model. \cite{cite03} And condition entropy can be written as:\\
+\begin{equation*}
+H(p) = -\sum_{a,b}^n p(a)p(b|a)\log p(b|a)
+\end{equation*}
+The maximum entropy model works well with classification problems and is adaptable and flexible. Maximum entropy model has an advantage that it has its own internal mechanism which can deal with several features related with each other. This is the reason of its higher accuracy compared to other methods. 
+\subsection{K-means clustering}
+We always use clustering as unsupervised learning method to deal with unlabeled data. K-means clustering is a method of vector quantization and originally from signal processing.\cite{cite04} The standard algorithnm was first proposed by Stuart Lloyd in 1982.\cite{cite05} The central concepts of it was that portion n observations $\left\{x_1, x_2, · · ·, x_n\right\}$ into k clusters in which each observation belongs to the cluster with the nearest mean. \cite{cite06} \\
+K-means steps are as follow:
+\begin{enumerate}
+    \item Set of centers is $\left\{v_1,v_2,...v_n\right\}$
+    \item Set of data point is $\left\{x_1,x_2,...x_n\right\}$
+    \item Number c is selected randomly as cluster center.
+    \item Calculating data distance between data point and cluster center.
+    \item Connect every data point to cluster center whom has minimum of distance.
+    \item Getting new cluster center by equation $v_i = (1/c_i)\sum_{j=1}^c_ix_i$ and $c_i$ is the $i$th number in the data point.
+    \item Repeat step 4.
+    \item If there is still data point reassigned, repeat step 5, otherwise stop.
+\end{enumerate}\\
+As K-means clustering is one of the most effective methods to discretize features, so we used K-means clustering to discretize values of each feature.\cite{cite07}\\
+\subsection{Prediction with Maximum Entropy model}
+We will build Maximum Entropy model with basic features of match. We can regard the prediction as a classification when the outcome is one in two pools. 
+We will consider about 11 common features to describe a game. 
+\begin{enumerate}
+    \item Field goal shoot
+    \item Three point shoot
+    \item Free throw shoot
+    \item Offensive rebounds
+    \item Assists
+    \item Blocks
+    \item Fouls
+    \item Field goal attempt
+    \item Defensive rebounds
+    \item Steals
+    \item Turnover
+\end{enumerate}\\
+There are so many feature functions we can choose here. It is a so significant step for perfect performance of the Maximum Entropy model. Hence we must choose a function which can match the model wonderfully and make full use of our features and data. \cite{cite08} We will use binary function here whose form is:\\
+$$ f(a,b)=\left\{
+\begin{aligned}
+1, the result of match meets the data\\
+0 , otherwise\\
+\end{aligned}
+\right.
+$$\\
+$b_i$ is the game output and $a_i$ represents features. There are X times $(x,y)$ occurs in the sample. There are totally N training data in the Set, we can get distribution of joint probability distribution $p (x, y)$ \cite{cite09}.
+\begin{equation*}
+p(a,b) = \frac{1}{N} * X
+\end{equation*}\\
+And the expectation is :
+\begin{equation*}
+E_p = \sum_{a,b}^n p(a,b)f(a,b)
+\end{equation*}
+\begin{equation*}
+H(p) = -\sum_{a,b}^n p(a)p(b|a)\log p(b|a)
+\end{equation*}
 \subsection{Conclusion}
-Through mechanical analysis of basketball after shoot action, it is found that the sports mechanical tracks followed by forward-rotation and contra rotation of basketball are difference, and therefore, the outcomes are different, too.\\
-Generally speaking, contra rotating basketball suffers larger air resistance, and its motion path changes significantly under the influence of force and other external factors; the influence of air resistance on forward-rotating basketball is not significant because the flying time and distance of basketball are short.
-Firstly, after contra rotating basketball suffers large air resistance, its motion path is uncertain, and thereby, the shooting rate is affected.\\
-Secondly, forward-rotating basketball suffers small air resistance, because its motion path is simple, and the shooting rate is relatively higher. Thirdly, forward-rotation is suitable for quick attack and low shooting, while contra rotation for shooting from middle-long range (including hook shot) and high shooting (nothing but the net and touching the backboard) while moving.\\
-Fourthly, the higher the speed is, the smaller the allowable angle deviation is, and the larger the allowable speed deviation is; the requirements for angle are stricter that that for speed; in the case of shooting at a certain speed, the larger the height is, the smaller the allowable angle deviation is, and the larger the allowable speed deviation is, but the requirements for both angle and speed are relatively loose.\\
-Fifthly, as the shooting distance increases, and the shooting speed quickens within the rational range, the shooting angle should be reduced by 1-2°, to guarantee an optimum flying radian of basketball.\\
-The conclusions show that the influencing factors of shooting rate don's only include shooting speed, shooting height, shooting distance but the dribbling posture and stability of players also should be considered also.
-Firstly, players whose shooting height is low should properly increase their shooting strength; if the shooting distance increases, the shooting strength also should be properly increased, to guarantee effective shooting rate [4].\\
-Secondly, the minimum shooting speed is linked with the shooting height of players, and reduces with the increase of the shooting height of players. Players? shooting height ranges from 1.7m to 3m. Calculations show that in the case o free throw, the minimum shooting speed ranges from 6.4729m/s to 7.5298m/s; different players should have on-load training according to their conditions, to keep stable and raise the shooting rate of free throw.\\
-Thirdly, basketball should be made to properly contra rotate to enlarge the incoming angle; besides, convolute basketball can reduce the forward impulsion of basketball and air resistance to make basketball fly in correct direction at a constant speed [5][6].\\
-Fourthly, the nearer the shooting position is, the smaller the shooting angle deviation should be. Hence, for near shooting training, stability practice should be enhanced.
-
-
-\subsection{References}
-
+We pick 6 games and use their data as follow:
+\begin{table}[!hbp]
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\hline
+Features & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9) & (10) & (11) & Home team win \\
+\hline
+Match 1 & 35 & 20 & 23 & 11 & 33 & 8& 22 & 22 & 44 & 9 & 15 & 1\\
+\hline
+Match 2 & 43 & 34 & 32 & 9 & 22 & 2 & 21 & 27 & 32 & 8 & 17 & 1\\
+\hline
+Match 3 & 37 & 41 & 28 & 10 & 21 & 3 & 11 & 12 & 37 & 5 & 18 & 0\\
+\hline
+Match 4 & 22 & 23 & 21 & 11 & 17 & 1 & 19 & 32 & 29 & 11 & 13 & 1\\
+\hline
+Match 5 & 42 & 26 & 25 & 8 & 18 & 4 & 19 & 22 & 33 & 10 & 19 & 1\\
+\hline
+Match 6 & 32 & 23 & 32 & 9 & 18 & 5 & 22 & 22 & 36 & 8 & 20 & 1\\
+\hline
+\end{tabular}
+\caption{Sample features}
+\end{table} 
+And we use the model to test past 6 years NBA matches and get the prediction accuracy as follow :
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|c|c|c|c|c|c}
+         \hline
+         Threshold & 2011-12 & 2012-13 & 2013-14 & 2014-15 & 2015-16 & 2016-17\\
+         \hline
+         0.5 & 76.3 & 69.1 & 69.3 & 67.5 & 64.6 & 68.5\\
+         \hline
+         0.6 & 77.1 & 75.9 & 79.3 & 78.5 & 79.5 & 76.4\\
+         \hline 
+         0.8 & 100.0 & 80.0 & 80.0 & 80.0 & 100.0 & 100.0\\
+    \end{tabular}
+    \caption{Prediction accuracy}
+    \label{Prediction accuracy}
+\end{table}
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{report} 
 
 
-\cite{nocitationsused}
-
-\TODO{student modified the format by removing bibtex}
-
-\TODO{
-
-ALL CITATION need to use cite 
-
-[1]Gómez M Á, Silva R, Lorenzo A, et al. Exploring the effects of substituting basketball players in high-level teams.[J]. Journal of Sports Sciences, 2016, Ahead of print:1-8.\\
-
-[2]Elena B, Francesca M, Flavia M, et al. Wheelchair Propulsion Biomechanics in Junior Basketball Players: A Method for the Evaluation of the Efficacy of a Specific Training Program[J]. Biomed Research International, 2015, 2015(2).\\
-
-[3]Lau M L. The preliminary study on the mechanical properties of heat- treated bovine bone using experimental and simulations\\
-
-[4]Wang Xiaojun. Influence of Moment of Momentum on Basketball Shooting Skills [J]. Journal of Yanshan University, 2010,(03)\\
-
-[5]Fan Z A, Tsang K Y, Chen S H, et al. Revisit the Correlation between the Elastic Mechanics and Fusion of Lipid Membranes[J]. Scientific Reports, 2016, 6.\\
-
-[6]Ma H S, Wang G Z, Tu S T, et al. Unified correlation of geometry and material constraints with creep crack growth rate of welded joints[J]. Engineering Fracture Mechanics, 2016, 163:220-235\\
-}
 \end{document}
