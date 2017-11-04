@@ -1,16 +1,7 @@
 \documentclass[sigconf]{acmart}
 
-\usepackage{hyperref}
+\input{format/final}
 
-\usepackage{endfloat}
-\renewcommand{\efloatseparator}{\mbox{}} % no new page between figures
-
-\usepackage{booktabs} % For formal tables
-
-\settopmatter{printacmref=false} % Removes citation information below abstract
-\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
-\pagestyle{plain} % removes running headers
-\input{format/i523}
 \begin{document}
 \title{Big Data and basketball}
 
@@ -117,7 +108,7 @@ H(p) = -\sum_{a,b}^n p(a)p(b|a)\log p(b|a)
 \end{equation*}
 \subsection{Conclusion}
 We pick 6 games and use their data as follow:
-\begin{table}[!hbp]
+\begin{table*}[!hbp]
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
 \hline
 \hline
@@ -138,9 +129,9 @@ Match 6 & 32 & 23 & 32 & 9 & 18 & 5 & 22 & 22 & 36 & 8 & 20 & 1\\
 \end{tabular}
 \caption{Sample features}
 \label{Sample features}
-\end{table} 
+\end{table*} 
 And we use the model to test past 6 years NBA matches and get the prediction accuracy as follow :
-\begin{table}[]
+\begin{table*}[htb]
     \centering
     \begin{tabular}{c|c|c|c|c|c|c}
          \hline
@@ -154,7 +145,7 @@ And we use the model to test past 6 years NBA matches and get the prediction acc
     \end{tabular}
     \caption{Prediction accuracy}
     \label{Prediction accuracy}
-\end{table}
+\end{table*}
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{report} 
 
