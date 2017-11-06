@@ -1,54 +1,32 @@
 \documentclass[sigconf]{acmart}
+\usepackage{graphicx}
 
 \input{format/i523}
-
 \begin{document}
-\title{Big Data for Edge Computing}
+\title{Big Data and League of Legends}
 
 
-\author{Ben Trovato}
-\orcid{1234-5678-9012}
+\author{Junjie Lu}
+% \orcid{1234-5678-9012}
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \streetaddress{P.O. Box 1212}
-  \city{Dublin} 
-  \state{Ohio} 
-  \postcode{43017-6221}
-}
-\email{trovato@corporation.com}
-
-\author{G.K.M. Tobin}
-\affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \streetaddress{P.O. Box 1212}
-  \city{Dublin} 
-  \state{Ohio} 
-  \postcode{43017-6221}
-}
-\email{webmaster@marysville-ohio.com}
-
-\author{Gregor von Laszewski}
-\affiliation{%
-  \institution{Indiana University}
-  \streetaddress{Smith Research Center}
+  \institution{Indiana University Bloomington}
+  \streetaddress{3322 John Hinkle Place}
   \city{Bloomington} 
-  \state{IN} 
+  \state{Indiana} 
   \postcode{47408}
-  \country{USA}}
-\email{laszewski@gmail.com}
+}
+\email{junjlu@iu.edu}
 
 
 % The default list of authors is too long for headers}
-\renewcommand{\shortauthors}{G. v. Laszewski}
+% \renewcommand{\shortauthors}{G. v. Laszewski}
 
 
 \begin{abstract}
-This paper provides a sample of a \LaTeX\ document which conforms,
-somewhat loosely, to the formatting guidelines for
-ACM SIG Proceedings.
+League of Legends is the most popular MOBA online game in these years. There are millions of players all over the world. And big data about League of Legends is also deserved to be researched. The data could tell us many things we do not know. We could know usage of champions by learning weekly free champion rotation. Then getting some information of a part of income of Riot Game company. Also we could learning some advanced information of this game by researching win rate and something else. These could help players getting a better performance in the game. Further more, we can also try to figure out which side would win the game before it ends. All this is from big data analysis. 
 \end{abstract}
 
-\keywords{Big Data, Edge Computing i523}
+\keywords{I523, HID214, Big Data, League of Legends, Win rate, Income}
 
 
 \maketitle
@@ -56,88 +34,69 @@ ACM SIG Proceedings.
 
 
 \section{Introduction}
+Computer games become more and more popular in these years. Children could play different single games on computer ten years ago. Different kinds of online games were produced in the past decade. And they have a really large market now. In 2016, market of video game all over the world is more than 111 billion.\cite{bbb} MOBA game (Multiplayer Online Battle Arena) occupies the most players because of its flexibility and uncertainty. The most successful MOBA game is League of Legend. In America, it has more than 30 million players and ten times of it in worldwide. That is an amazing number meaning a large succeed. Player could pick a champion before the game and fight with the champion he picked as a team with five persons. There are 137 existing champions and the number is still growing. Different champions play different role in their team with their own capability. It is interesting playing different champions. Players must pay for champions so that they could use them. Riot game, the producer of League of Legends sets free 10 champions every week to give players better playing experience. If player likes these champions, they could purchase them so that they can use them anytime. Further more they can also buy some skins which can give champions better appearance. These could bring Riot Game much income. We could analyze the influence of free champions on income and some other fields.
+\section{Data Analysis for incoming}
+We could get much data on LoLDB website. It can tell you much about champions such as win rate, pick rate and so on. Before analysis, we should know there are different tiers in League of Legends. It can tell people how intelligent a player is. We just pick from normal to Diamond. According to the data, we could get the usage of a champion just name it AB as follow:\\
+\begin{equation}
+    U_t=100*\frac{M_t}{\sum_{c=1}^C\frac{W_t}{5}}
+\end{equation}
+In this equation, $M_t$ is the number of match in which champion AB being selected in tier $t$ on one day. $W_t$ means total winners in tier $t$. \cite{ccc} The usage score roughly translates to the percent of games in which a champion appears and allows for an increased score when popular champions appear on both teams.\cite{ddd} \\
 
-Put here an introduction about your topic. 
-We just need one sample refernce so the paper compiles in LaTeX so we
-put it here \cite{editor00}.
+According to Figure 1, the usage of free champions is absolutely increased especially in lower tiers. And the usage of champions free on previous week is still higher than champions who are not free recently. We can get that amount of players payed for their beloved champions after using them freely. \\
 
-\section{figures}
+As the data from Figure 2, we can get the probability of players who bought champions after playing with free champion rotation. And we can get:\\
+\begin{equation}
+    I=\sum_{c=1}^{10}\sum_{t=1}^6a*U*p_c
+\end{equation}
+$I$ is the income by selling champions. $a$ is a constant of price of champion. $p_c$ is the probability of purchasing champions. So we can get income of selling champions of Riot Game approximately with this equation. \\
+Further more, skin can also bring income for Riot Game. As a survey in China about if players are forward to purchasing a skin for champion he love. It can not only bring a better appearance for the champions, but also some confidence when fighting with the champion. More than 30\% users are willing to buy skins according to the survey in Figure 3. One champion could have different kinds of skins with different prices. \\
 
-In Figure \ref{f:fly} we show a fly. Please note that because we use
-just columwidth that the size of the figure will change to the
-columnwidth of the paper once we change the layout to final. CHnaging
-the layout to final should not be done by you. All figures will be
-listed at the end.
-
-\begin{figure}[!ht]
-  \centering\includegraphics[width=\columnwidth]{images/fly.pdf}
-  \caption{Example caption}\label{f:fly}
-\end{figure}
-
-When copying the example, please do not check in the images from the
-examples into your images directory as you will not need them for your
-paper. Instead use images that you like to include. If you do not have
-any images, do not dreate the images folder.
-
-\section{Tables}
-
-In case you need to create tables, you can do this with online tools
-(if you do not mind sharing your data) such as
-\url{https://www.tablesgenerator.com/} or other such tools (please
-google for them). They even allow you to manage tables as CSV.
-
-or generate them by hand while using the provided template in Table\ref{t:mytable}. Not ethat
-the caption is before the tabular environment.
-
-\begin{table}[htb]
-\centering
-\caption{My caption}
-\label{t:mytabble}
-\begin{tabular}{lll}
-1 & 2 & 3 \\
-\hline
-4 & 5 & 6 \\
-7 & 8 & 9
-\end{tabular}
-\end{table}
-
-\section{Long example}
-
-If you like to see a more elaborate example, please look at
-report-long.tex. 
-
+\begin{equation}
+    I_s=\sum_{c=1}^{10}\sum_{t=1}^6b*U*p_s
+\end{equation}
+$b$ is a constant for value of skins and $p_s$ is the percentage of players buying skins. We can get $I$ and $I_S$ as incoming of Riot Game by selling champions and skins from data analysis.
+\section{Prediction for patch}
+All games need balance. There are more than 130 champions in League of Legends and they all have their own abilities, playing different roles. Designer should give equal ability to get some usage of players. But it is a really difficult task. When we strength champion A and its usage increases, that must means usage of another champion decreased. Also if champion C always has a wonderful performance when he faces champion D, the usage of champion D won't be high if usage of champion C is high. To deal with this situation, designers must fix features of champions patch next patch. They not only fix bug of the game, but also buff or debuff champions  in turn to make sure they could got enough picked. In this case, designer would only adjust several champions in each patch. With more than two year observation, we found that designers prefer to adjust champions whom has higher win rate. A higher win rate means players prefer to pick them to have a easy win. This limits usage of other champions. Hence designer have to make some adjustment on the champion, such as turn down the damage it can make or increasing cool down time of skills. Designers always take this way to keep balance between champions. For example, in Patch 6.13, champion Graves has a out of power win rate 57\%. This is much higher than the average and means that Graves occupies the most usage. Designers strengthened champion Kindred by increasing its armor so that it can beat Graves in late game. And increased damage of champion Nidalee encouraging it beats Graves in early games. Then we can see the win rate of these three champions are approximately equal in next patch. That is what they want. With this thought, we could use the big data of win rate and some else to predict something of patch. For instance, champion Galio has a pretty good performance in matches with a win rate of 54\%. So I think champion Malzahar and Vayne will get buffed in next patch to limit win rate of Galio. There is something more what we have to consider is the impact of new champions. Most of new champions, will stand on its usage peek for one week or two, and cool down after it is free week. Then it will become as other champions. Some thing different is champion Yasuo, for unknown reason, its usage is high stably. No matter how designer weaken it, there are still millions of players loving it and fighting with it. People have to admit it is the most popular champion they have seen. What is more we have to pay attention is champion reworking. For instance, champion Sion got rework in patch 4.18 and we can see a tremendous increase in usage in October 2014  The usage stabilizes quickly overtime, and it remains mostly unaffected during his free week because many players already own Sion (due to his age) and inexpensiveness. \cite{aaa}
+\section{Judge toxic behavior}
+The game has its own report system, players could report others who has toxic behavior. But it is hard to say who is really toxic if two players report each other. Big data helps a lot here. The data KDA(Kill-Death-Assist) is essential in this part. \\
+\begin{equation}
+    KDA=\frac{Kill + Assist}{Death}
+\end{equation}
+Players who has toxic behavior always has a negative attitude to the match. In this case, the value of KDA is always pretty small. Number of killing minions $cs$ could also make some contribution in this part. \\
+\begin{equation}
+    T=\frac{KDA*cs}{R}
+\end{equation}
+Number $R$ is time of reported gotten from teammates in one game. In this case, when we got some report form players, we could use big data to judge value $T$ to get conclusion of people who is really toxic one. The player is toxic when value of $T$ is pretty low. System could give toxic players some punishment and prevent from give punishment to wrong people. 
+\section{Predict result of matches for further work}
+These days the world championship is in China. 16 teams are fighting for the final championship. The competition is a little different from normal games. Each side could ban 5 champions in one match. And one champion could not pick twice on one side or two. There are many strategy on ban and pick, and this is coaches' job. How to pick 5 good champions after banning 10 champions totally helping winning the match. Coaches need to refer big data, not only win rate of every champion, but also win rate of champions when players in his team playing them. What is more, data from OP website could provide more data in detail such as win rate of champion A when facing champion B. Above all it needs a complex model to predict the result of a match. So it is further work. 
 \section{Conclusion}
-
-Put here an conclusion. Conlcusions and abstracts must not have any
-citations in the section.
-
-
+Big data could help us to analyze much useful information. We could know how much Riot Game earn by selling champions and skins. And having a judgement to the patch. Players could practice champions would get strengthen in advance. It could help them get a higher win rate before everyone got this. And people may get result prediction of a match before it begins in the future. 
 \begin{acks}
 
-  The authors would like to thank Dr. Gregor von Laszewski for his
-  support and suggestions to write this paper.
+The author would like to thank Professor Gregor von Laszewski and all TAs for providing the resource, tutorials and other related materials to write this paper.
 
 \end{acks}
 
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{report} 
-
-\appendix
-
-We include an appendix with common issues that we see when students
-submit papers. One particular important issue is not to use the
-underscore in bibtex labels. Sharelatex allows this, but the
-proceedings script we have does not allow this.
-
-When you submit the paper you need to address each of the items in the
-issues.tex file and verify that you have done them. Please do this
-only at the end once you have finished writing the paper. To d this
-cange TODO with DONE. However if you check something on with DONE, but
-we find you actually have not executed it correcty, you will receive
-point deductions. Thus it is important to do this correctly and not
-just 5 minutes before the deadline. It is better to do a late
-submission than doing the check in haste. 
-
-\input{issues}
+\bibliography{report}
+\begin{figure}{htp}
+\centering
+\includegraphics[width=1.0\textwidth]{images/WechatIMG112.jpeg}
+\caption{Usage of free champion}
+\label{Figure 1}
+\end{figure}
+\begin{figure}{htp}
+\centering
+\includegraphics[width=1.0\textwidth]{images/WechatIMG114.jpeg}
+\caption{Probability of purchasing champion}
+\label{Figure 2}
+\end{figure}
+\begin{figure}{htp}
+\centering
+\includegraphics[width=1.0\textwidth]{images/WechatIMG115.jpeg}
+\caption{Percentage of players willing to buy skins}
+\label{Figure 3}
+\end{figure}
+% \input{issues}
 
 \end{document}
