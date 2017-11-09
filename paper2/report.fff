@@ -1,0 +1,24 @@
+\begin{figure}{htp}
+\centering
+\includegraphics[width=1.0\textwidth]{images/WechatIMG112.jpeg}
+\caption{Usage of free champion}
+\label{Figure 1}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}{htp}
+\centering
+\includegraphics[width=1.0\textwidth]{images/WechatIMG114.jpeg}
+\caption{Probability of purchasing champion}
+\label{Figure 2}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}{htp}
+\centering
+\includegraphics[width=1.0\textwidth]{images/WechatIMG115.jpeg}
+\caption{Percentage of players willing to buy skins}
+\label{Figure 3}
+\end{figure}
+\efloatseparator
+ 
