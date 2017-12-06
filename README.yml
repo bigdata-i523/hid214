@@ -37,7 +37,7 @@ project:
     hid:
         - 214
     title: Benchmarking a BigData Docker deployment
-    abstract: This paper showcases tis and that and the other
-    url: https://github.com/bigdata-i523/sample-pid000/project
+    abstract: This paper showcases this and that and the other
+    url: https://github.com/bigdata-i523/hid214/project
     status: 0%
     chapter: Technology
