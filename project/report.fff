@@ -1,0 +1,7 @@
+\begin{figure}[!ht]
+\centering
+\includegraphics[]{images/data_samples}
+\caption{70 samples of hand-drawn digits in this data set.}
+\end{figure}
+\efloatseparator
+ 

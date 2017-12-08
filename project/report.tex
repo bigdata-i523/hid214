@@ -103,8 +103,9 @@ In this paper, we choose the data of Digit Recognizer from Kaggle.com in order t
 \subsection{Data Set Description}
 
 In train.csv data file, it contains $42000$ gray-scale images of hand-drawn digits, from zero through nine. Each image is a $28 \times 28$ pixels matrix with a total of 784 pixels \cite{kaggle}. Each pixel has a single pixel-value which is an integer from 0 to 255 associated with it, indicating the lightness or darkness of that pixel (higher numbers meaning lighter). In this experiment, we have plotted the graph in order to see the appearance of these digits easily. Figure 1 shows the first 70 samples.
-\begin{figure}
-\includegraphics[width=0.35\columnwidth]{images/data_samples}
+\begin{figure}[!ht]
+\centering
+\includegraphics[]{images/data_samples}
 \caption{70 samples of hand-drawn digits in this data set.}
 \end{figure}
 
@@ -512,7 +513,7 @@ The running time of logistic regression is relatively high. For Clean Data, it r
 
 Random forest uses a random way to build a forest within many decision trees. There is no correlation between each tree in a random forest \cite{wiki.rf}. After getting the forest, when a new input sample comes in, each decision tree required to make a judgment separately in order to see which class the sample belongs to (for the classification algorithm), and predict the sample for the category which has most selected.
 
-Random forest is mainly used for regression and classification. It is somewhat similar to the bagging which utilizes decision trees as a basic classifier. Bagging could generate a decision tree after replay a sample in each bootstrap and do not make more intervention while generating these trees. Random forest is also sampling with bootstrap, but the difference is that when constructing each tree, every node variable is generated only in a small number of randomly selected variables. Therefore, not only the samples are random, but also the generation of each node's features. Since the combination classifier is more effective than the single classifier，random forest could classify the data and give the importance evaluation of each variable.
+Random forest is mainly used for regression and classification. It is somewhat similar to the bagging which utilizes decision trees as a basic classifier. Bagging could generate a decision tree after replay a sample in each bootstrap and do not make more intervention while generating these trees. Random forest is also sampling with bootstrap, but the difference is that when constructing each tree, every node variable is generated only in a small number of randomly selected variables. Therefore, not only the samples are random, but also the generation of each node's features. Since the combination classifier is more effective than the single classifier?random forest could classify the data and give the importance evaluation of each variable.
 
 The basic principle of random forest is to get a new training sample set by selecting $k$ samples from the original training sample set $N$, and then make up a random forest according to $k$ classification trees. The classification result of the new data depends on the score of the tree votes \cite{sp.rfc}. In essence, it is an improvement on the decision tree algorithm: it combines multiple decision trees, each tree established depends on an independently sample and has the same distribution. The classification error relies on each the classification ability of a tree and the correlation between them. Feature selection uses a random method to split each node, and then compare the error generated in different situations. The inherent estimation error, classification ability and relevance determine the number of features \cite{sp.rfc}.
 
@@ -746,7 +747,7 @@ Logistic Regression received an average performance among the 5 algorithms. It a
 
 To conclude, we decide to use SVM classifier for Digit Recognition Task. We should definitely use feature extraction on the data because of the running time and over-fitting problem. The Binary Data cleaning method is optional. If we want to have higher accuracy, we should not use Binary Data cleaning. As a trade-off, if we want to have faster training speed, we should use Binary Data cleaning.
 
-\section{Future Improvement}
+\section{Limitations}
 
 Our analysis is far from perfect. There are several points that we want to point our as discussion and also opportunities for future improvement.
 \begin{enumerate}
