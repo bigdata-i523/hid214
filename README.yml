@@ -16,7 +16,6 @@ paper1:
         kinematic mechanics can contribute to analyze the influence of
         rotation of basketball on air resistance.
     url: https://github.com/bigdata-i523/hid214/paper1/
-    type: latex
     status: 100% Oct 29th
     chapter: Sports
 paper2:
@@ -29,7 +28,6 @@ paper2:
     abstract: >
         This paper showcases tis and that and the other in regards to abc
     url: https://github.com/bigdata-i523/hid214/paper2/
-    type: latex
     status: 100%
     chapter: Lifestyle
 project:
